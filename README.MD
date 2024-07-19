@@ -38,40 +38,14 @@ There are some important arguments for the script you should consider when runni
 ## II. Predicted Results
 
 ```
-Epoch 172/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6814 - accuracy: 0.8962
-Epoch 173/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6759 - accuracy: 0.8959
-Epoch 174/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6791 - accuracy: 0.8926
-Epoch 175/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6761 - accuracy: 0.8952
-Epoch 176/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6810 - accuracy: 0.8933
-Epoch 177/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6827 - accuracy: 0.8906
-Epoch 178/200
-659/659 [==============================] - 5s 8ms/step - loss: 0.6793 - accuracy: 0.8894
+Updating...
 
 ```
 
 
 ## III. Evaluate with Perplexity
 ```
-Epoch 149/150
-659/659 [==============================] - 5s 8ms/step - loss: 1.3690 - accuracy: 0.7727
-Epoch 150/150
-659/659 [==============================] - 5s 7ms/step - loss: 1.3734 - accuracy: 0.7660
-Model Perplexity: 13681606.60417178
-Perplexity: 514234.41152062017 cho câu "thừa gia chẳng hết nàng vân" --> "mà trong trọng phúc sau là để xong"
-Perplexity: 1802894.065081035 cho câu "phong lưu phú quý ai bì" --> "nửa đưa nha quỷ giập hoa quen mời"
-Perplexity: 14.133798508370308 cho câu "ngẫm hay muôn sự tại trời" --> "bấy giờ cho cực ân sau thế lời"
-Perplexity: 17369866.619657647 cho câu "bắt phong trần phải phong trần" --> "tạ lòng nàng lại biết lòng biết tình"
-Perplexity: 73517824.46564814 cho câu "có đâu thiên vị người nào" --> "thấy lời còn đó nghĩ này được đây"
-Perplexity: 142100.3474557246 cho câu "có tài mà cậy chi tài" --> "mà xem nước đá ra miền đưa nhân"
-Perplexity: 924567.8943700478 cho câu "đã mang lấy nghiệp vào thân" --> "đời tài tri ván vội mưa hãi đăm"
-Perplexity: 22541027.35671666 cho câu "thiện căn ở tại lòng ta" --> "hãy cho ong dẹp biết thì trả đời"
-Perplexity: 6321930.143297624 cho câu "lời quê chắp nhặt dông dài" --> "sốt dầu lừa đã vơi đồng chiêm may"
+Updating...
 ```
 
 
