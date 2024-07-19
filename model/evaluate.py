@@ -14,22 +14,21 @@ class EvaluateModel():
     Calculate the perplexity of the model on the given sentences.
     '''
     try:
+      total_num_predictions = SIX + EIGHT
       perplexity_values = []
-
       for sen in input_test_sentences:
-          token_list = self.tokenizer.texts_to_sequences([sen])[0]
-          log_prob_sum = 0.0
-          num_predictions = len(token_list) - 1
-
-          for i in range(1, len(token_list)):
-              token_list_padded = pad_sequences([token_list[:i]], maxlen=self.max_sequence_len-1, padding='pre')
-              predicted = self.model.predict(token_list_padded, verbose=0)[0]
-              next_word_prob = predicted[token_list[i]]
-              log_prob_sum += np.log(next_word_prob)
-
-          perplexity = np.exp(-log_prob_sum / num_predictions)
-          perplexity_values.append(perplexity)
-
+        token_list = self.tokenizer.texts_to_sequences([sen])[0]
+        log_prob_sum = 0.0
+        total_log_prob_sum = 0.0      
+        for _ in range(NUM_NEXT_WORDS):
+          token_list_padded = pad_sequences([token_list], maxlen=self.max_sequence_len-1, padding='pre')
+          predicted_probs = self.model.predict(token_list_padded, verbose=0)[0]
+          next_word_prob = predicted_probs[np.argmax(predicted_probs)]
+          log_prob_sum += np.log(next_word_prob)
+        total_log_prob_sum += log_prob_sum
+        average_log_prob = total_log_prob_sum / total_num_predictions
+        perplexity = np.exp(-average_log_prob)
+        perplexity_values.append(perplexity)
       return perplexity_values
     except Exception as e:
       print(f"Error in calculating perplexity: {e}")
