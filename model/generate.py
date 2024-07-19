@@ -33,4 +33,4 @@ class GeneratePoem():
       return text_out
     except Exception as e:
       print(f"Error in generating poem: {e}")
-      return None, None
+      return None
