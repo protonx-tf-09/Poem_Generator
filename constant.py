@@ -1,0 +1,3 @@
+SIX = 6
+EIGHT = 8
+NUM_NEXT_WORDS = 8

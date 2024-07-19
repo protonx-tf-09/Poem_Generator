@@ -1,0 +1,4 @@
+numpy 1.25.2
+tensorflow 2.15.0
+requests 2.31.0
+re 2.2.1
